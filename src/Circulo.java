@@ -3,10 +3,11 @@ public class Circulo {
 
 	static final double NUM_PI = 3.1416;
 
-	double radio;
+	private double radio;
 
 	//Método que dado el radio calcula la circunferencia de un círculo.
-	public double circunferencia(double radio) {
+	//public double circunferencia(double radio) {
+	public double circunferencia() {
 
 		double result;
 
@@ -16,7 +17,8 @@ public class Circulo {
 	}
 
 	//Método que dado el radio calcula el area de un círculo.
-	public double area(double radio) {
+	//public double area(double radio) {
+	public double area() {
 
 		double result;
 
@@ -24,4 +26,14 @@ public class Circulo {
 
 		return result;
 	}
+
+	public double getRadio() {
+
+		return radio;
+	}	
+
+	public void setRadio(double rad) {
+
+		radio = rad;
+	} 
 }
