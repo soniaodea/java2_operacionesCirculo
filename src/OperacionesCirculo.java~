@@ -12,14 +12,13 @@ public class OperacionesCirculo {
 	  Scanner sc = new Scanner(System.in);
           System.out.print("\ningresa el radio: ");
           radio = sc.nextDouble();
-	  
-	  circulo.setRadio(radio);
+	  radio=circulo.getRadio();
 
 	
-	  result =  circulo.circunferencia();
+	  result =  circulo.circunferencia(radio);
 	  System.out.println("La circunferencia es: " + result); 
 			
-	  result =  circulo.area();
+	  result =  circulo.area(radio);
 	  System.out.println("El area es: " + result); 
 	}
 

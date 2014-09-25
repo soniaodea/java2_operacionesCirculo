@@ -3,7 +3,7 @@ public class Circulo {
 
 	static final double NUM_PI = 3.1416;
 
-	private double radio;
+	private double radio = -1;
 
 	//Método que dado el radio calcula la circunferencia de un círculo.
 	//public double circunferencia(double radio) {
@@ -11,7 +11,8 @@ public class Circulo {
 
 		double result;
 
-		result = 2*NUM_PI*radio;
+		//result = 2*NUM_PI*radio;
+		result = 2*NUM_PI*this.getRadio();
 
 		return result;
 	}
@@ -22,7 +23,7 @@ public class Circulo {
 
 		double result;
 
-		result = NUM_PI*radio*radio;
+		result = NUM_PI*this.getRadio()*this.getRadio();
 
 		return result;
 	}
@@ -37,3 +38,27 @@ public class Circulo {
 		radio = rad;
 	} 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
